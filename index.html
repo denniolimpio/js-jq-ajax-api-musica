@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title> Ajax Api Musica</title>
+</head>
+
+
+<body>
+
+  <div class="wrap">
+
+    <div class="album-container">
+      <!--  qui inserisco i template con handlebars -->
+    </div>
+
+
+    <!-- Bonus -->
+
+    <!-- <select id="genre-music">
+    
+    <option value= "All" > All</option>
+    <option value="Pop"> Pop</option>
+    <option value="Rock"> Rock</option>
+    <option value="Jazz"> Jazz</option>
+    <option value="Metal"> Metal </option>
+
+  </select> -->
+
+  <!--  creo il mio template -->
+  <script id="album-template" type="text/x-handlebars-template">
+
+    <div class="album">
+
+      <img src="{{ poster }}" alt " ">
+      <h3>  {{ title }}</h3>
+      <span class=" author "> {{ author }}</span>
+      <span class=" year "> {{ year }}</span>
+
+    </div>
+  </script>
+
+  <script type="text/javascript" src="js/script.js"></script>
+
+</div>
+</body>
+</html>
